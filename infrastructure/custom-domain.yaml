@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Resources:
+  SiteCNAME:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      Name: docs.report-a-death.dev.account.gov.uk
+      Type: CNAME
+      HostedZoneId: !ImportValue DevHostedZoneId
+      ResourceRecords:
+        - "alphagov.github.io"
+      TTL: 60
+
