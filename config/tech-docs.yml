@@ -3,16 +3,16 @@ host: docs.report-a-death.dev.account.gov.uk
 
 # Header-related options
 show_govuk_logo: true
-service_name: Name of API
-service_link: https://www.larry-the-cat.service.gov.uk
+service_name: Report a Death
+service_link: https://report-a-death.dev.account.gov.uk
 phase: Beta
 
 # Links to show on right-hand-side of header
 header_links:
-  About: https://www.larry-the-cat.service.gov.uk/about
-  Get Started: https://www.larry-the-cat.service.gov.uk/get-started
-  Documentation: /
-  Support: https://www.larry-the-cat.service.gov.uk/support
+  GitHub: https://github.com/alphagov/di-report-a-death
+  Prototypes: https://github.com/alphagov/di-rad-prototypes
+  Prototype repo: https://github.com/alphagov/di-rad-prototypes
+  Techdocs repo: https://github.com/alphagov/di-report-a-death-techdocs
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: false
@@ -35,5 +35,5 @@ max_toc_heading_level: 2
 prevent_indexing: false
 
 show_contribution_banner: true
-github_repo: alphagov/YOUR_REPO
+github_repo: alphagov/di-report-a-death-techdocs
 github_branch: main
