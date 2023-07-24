@@ -1,0 +1,10 @@
+---
+title: Technical architecture
+weight: 20
+---
+
+# Technical Architecture
+
+Report a Death is built using serverless technologies, as is standard in the Digital Identity programme. 
+
+Pages are rendered using nunjucks templates by typescript lambdas. Each page is redered by a different lambda. These are deployed using AWS SAM. DynamoDB is used for state.
