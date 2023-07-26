@@ -1,0 +1,11 @@
+---
+title: Sessions
+weight: 30
+---
+
+# Sessions
+
+It is possible to use the service without signing in. In this case, we create a session cookie to correlate different pages of the form. Sessions are time limited (the exact time has not yet been decided). All state is stored server-side, with just a session ID being stored in the cookie.
+
+When a user is signed in with One Login, a custom session cookie is still used, but this is linked to their pair-wise identifier (sub) in the database, which allows the user to resume after an extended period of time.
+

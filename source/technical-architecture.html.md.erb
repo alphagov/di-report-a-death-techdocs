@@ -5,10 +5,13 @@ weight: 20
 
 # Technical Architecture
 
-Report a Death is built using serverless technologies, as is standard in the Digital Identity programme. 
+Report a Death is built using serverless technologies, as is standard in the Digital Identity programme.
 
 The service is hosted on AWS in the EU-WEST-2 (London) region.
 
-For accessibility reasons, pages are server-side rendered. This is done using typescript lambdas rendering nunjucks templates. Each page is rendered by a different lambda. These are deployed using AWS SAM. DynamoDB is used for state.
+For accessibility reasons, pages are server-side rendered. This is done using typescript lambdas rendering nunjucks
+templates.
+Pages are rendered using nunjucks templates by typescript lambdas. Each page is rendered by a different lambda. These
+are deployed using AWS SAM. DynamoDB is used for state.
 
 <img src="/images/Architecture.png" alt="A technical architecture diagram showing how user requests are routed using API gateway to lambdas for server side rendered content, and using cloudfront to serve static assets from an S3 bucket" />
