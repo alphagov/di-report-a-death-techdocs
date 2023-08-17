@@ -1,0 +1,24 @@
+---
+title: MVS High Level System Overview
+weight: 20
+---
+
+# MVS System Overview
+
+Below is a system overview of actors and components that make up the initial MVS of RAD:
+
+Key actors:
+- Citizen
+- Registrar
+- TUO Staff
+- RAD Staff
+
+Key components:
+- RAD website consisting of an API gateway, lambdas for server side rendered content, and using cloudfront to serve static assets from an S3 bucket
+- Gov One-Login allowing users to return to their tasks to complete later
+- Gov Notify for communication to citizens, registrars and backend staff
+- Existing TUO system - data must be replayed into here
+- Notification service - for informing departments about capture deceased citizens
+- Reference data store - information on relationship between pensions and NINOs
+
+<img src="/images/initial-mvs-arch.png" alt="A system overview of actors and components that make up the initial MVS of RAD" />
